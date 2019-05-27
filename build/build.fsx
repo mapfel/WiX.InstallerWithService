@@ -113,7 +113,7 @@ Target.create "BuildWiXSetup" (fun _ ->
                                                              DowngradeErrorMessage = "A later version is already installed, exiting."
                                                          })
 
-    let WixVariables = [{Wix.Variable.Id="WixUILicenseRtf"; Wix.Variable.Overridable=Wix.No; Wix.Variable.Value="./../license.rtf"}]
+    let WixVariables = [{Wix.Variable.Id="WixUILicenseRtf"; Wix.Variable.Overridable=Wix.No; Wix.Variable.Value="./../resources/license.rtf"}]
 
     // wixPath "" means root folder
     // all scripts (*.wxs) in wixPath get populated with the given values
@@ -126,7 +126,7 @@ Target.create "BuildWiXSetup" (fun _ ->
                                          Description = "Setup for the Demo-Service."
                                          ProductLanguage = 1033
                                          ProductVersion = "19.0.0"
-                                         ProductPublisher = "Fake/WiX Demo Company"
+                                         ProductPublisher = "Fake-WiX Demo Company"
                                          // Set fixed upgrade guid, this should never change for this project!
                                          UpgradeGuid = (System.Guid WixProductUpgradeGuid)
                                          MajorUpgrade = [MajorUpgrade]
