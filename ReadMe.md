@@ -26,6 +26,7 @@ This demo focusses the **WiX** related functionality, so only that part is descr
 1. open a developer console
 1. navigate to the project root folder
 1. run `./build/build.cmd`
+1. the installer is inside `./deploy/` folder 
 
 ## Details
 
